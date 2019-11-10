@@ -1,3 +1,8 @@
+<audio style="display:hidden;" loop autoplay>
+  <source src="/assets/songs/RufftasticScene1Music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 <div class="container">
 
     <img src="/assets/backgrounds/NoBallsRiver.gif" class="background">

@@ -1,3 +1,8 @@
+<audio style="display:hidden;" loop autoplay>
+  <source src="/assets/songs/RufftasticScene1Music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 <div id="editor" class="editor" style="top:100px;width:50%;height:50%;"># Print function will display whatever is
 # after it into the window below!
 print("Good Boy")</div>

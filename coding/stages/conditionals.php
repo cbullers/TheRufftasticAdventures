@@ -1,3 +1,8 @@
+<audio style="display:hidden;" loop autoplay>
+  <source src="/assets/songs/RufftasticScene3Music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 <div class="container">
 
     <img src="/assets/backgrounds/NoBallsRiver.gif" class="background">
@@ -23,16 +28,7 @@ else:
 # See how after the word if,
 # it uses the >, which compares two numbers
 # 5 is greater than 3, so the output will be
-# "Hello there!"
-
-# Boolean expressions allow us to write programs that decide whether to execute some code or not.
-# Now create a Boolean of your own! Below will be an example
-variable = False
-if variable == True:
-    print("The function will be activated!")
-else:
-    print("However, this won't pass.")
-</div>
+# "Hello there!"</div>
     <style>#output { background-color: rgba(180,180,180); font-size:24px; }</style>
     <div id="output" class="output" style="position:absolute;top: calc(50% + 100px);right:40px;width:49.5%;height:25%;margin-top:5px">
 
@@ -73,15 +69,29 @@ let chatMessages = [];
     function sucHandle(output)
     {
 
-       if(output.includes("New Number Of Dogs = 2"))
+       if(output.includes("Hello there!"))
        {
 
             // hide everything and do stuff
-            $(".container").fadeOut("slow",function()
-            {
+            setTimeout(function(){
+                $(".container").fadeOut("slow",function()
+                {
 
+                    document.body.innerHTML += '<img src="/assets/backgrounds/GoodestBoiJump.gif" class="background">';
+                    setTimeout(function()
+                    {
+                        $(".background").remove();
+                        document.body.innerHTML += '<img src="/assets/backgrounds/DoggoRoll.gif" class="background">';
+                    },1750)
+                    
 
-            });
+                    setTimeout(function(){
+                        window.location.href = "stage.php?stage=Mw==";
+                    },5000);
+
+                });
+            },2000);
+
 
        } 
 

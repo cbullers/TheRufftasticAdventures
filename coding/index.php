@@ -11,6 +11,11 @@ $stages = $json_data->stages;
 
 <html>
 
+<audio style="display:hidden;" loop autoplay>
+  <source src="/assets/songs/RufftasticWaitingMusic.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
     <head>
         <title>rufftastic coding</title>
         <?php include("../important_html_includes.php"); ?>
