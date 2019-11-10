@@ -1,0 +1,30 @@
+{
+    "stages": [
+      
+      {
+        "id": 0,
+        "name": "Good Boy - (Ch. 1)",
+        "desc": "Learn how to print in Python & Start the tale of my love life!",
+        "file": "hello_world.php"
+      },
+      {
+          "id": 1,
+          "name": "Making a new friend - (Ch. 2)",
+          "desc": "Learn about Python variables & Another doggo!",
+          "file": "variables.php"
+      },
+      {
+          "id": 2,
+          "name": "Retrieving the ball! - (Ch. 3)",
+          "desc": "Learn about Python conditionals & A heroic save",
+          "file": "conditionals.php"
+      },
+      {
+        "id": 3,
+        "name": "A happy ending - (End)",
+        "desc": "Learn about Python loops & The glistening moon",
+        "file": "loops.php"
+    }
+      
+    ]
+  }

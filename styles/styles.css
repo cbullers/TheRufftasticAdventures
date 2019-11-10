@@ -1,0 +1,193 @@
+body,*
+{
+    padding:0;
+    margin:0;
+}
+
+.background {
+    height: 100vh;
+    width:100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.editor { 
+    position: absolute;
+}
+
+.output
+{
+    border: 10px solid;
+    border-image: url(/assets/backgrounds/PencilSquare.png) 30 round;
+    overflow-y:auto;
+}
+
+.container
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.bottom-left {
+    position: absolute;
+    left: 0;
+    bottom:0;
+}
+
+.bottom-right {
+    position: absolute;
+    right: 5%;
+    bottom:5%;
+}
+
+#stage-dog-bubble
+{
+    position:relative;
+    top:0;
+}
+
+#dog-stage-select
+{
+    max-width:25%;
+    height:75vh;
+}
+
+.largish
+{
+    max-width: 30%;
+    height:auto;
+}
+
+.medium
+{
+    max-width: 25%;
+    height:auto;
+}
+
+#initial-chatbox {
+    width:25%;
+    max-width: 25%;
+    height: auto;
+    position: absolute;
+    top: 7%;
+    right: 5%;
+    overflow: visible;
+    border: 1px solid black;
+    text-align:center;
+    border: 10px solid;
+    border-image: url(/assets/backgrounds/PencilSquare.png) 30 round;
+}
+#initial-chatbox a
+{
+    text-decoration: none;
+}
+#initial-chatbox a:visited
+{
+    text-decoration: none;
+    color:black;
+}
+
+.header
+{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:50px;
+    padding-top:20px;
+    padding-left:20px;
+    display:flex;
+    background-color:white;
+    z-index: 9999;
+    border-bottom: 10px solid;
+    border-image: url(/assets/backgrounds/PencilSquare.png) 30 round;
+}
+.header a { text-decoration: none;}
+.header a:visited {color:black;}
+.itemcenter {
+    flex: 0 1 auto;
+    width: 250px;
+    height: 100px; 
+    position: absolute;             /* new */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.stages
+{
+    position:absolute;
+    left: 0;
+    overflow:visible !important;
+    display:flex;
+    flex-wrap: wrap;
+    top:75px;
+    padding:25px;
+    max-width:55%;
+    height:75%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.stage
+{
+    border: 10px solid;
+    border-image: url(/assets/backgrounds/PencilSquare.png) 30 round;
+    font-family: "SongForJennifer";
+    width: 100%;
+    min-width:200px;
+    padding:15px;
+    margin:25px;
+    cursor:pointer;
+    transition: opacity .5s;
+}
+.stage:hover
+{
+    opacity:.5;
+}
+.stage-name
+{
+    text-align: center;
+    font-size: 32px;
+}
+.stage-desc
+{
+    text-align: center;
+    font-size:24px;
+}
+
+.story-button
+{
+    width:75%;
+    height:50px;
+    font-family: "SongForJennifer";
+    margin:15px auto;
+    font-size:32px;
+    border: 10px solid;
+    border-image: url(/assets/backgrounds/PencilSquare.png) 30 round;
+    cursor:pointer;
+    transition: background-color .5s;
+}
+
+.story-button:hover
+{
+    background-color: rgb(206, 205, 205);
+}
+
+@font-face {
+    font-family: "SongForJennifer";
+    src: url("/assets/fonts/asongforjennifer.ttf");
+}
+.jen
+{
+    font-family: "SongForJennifer", sans-serif;
+}
