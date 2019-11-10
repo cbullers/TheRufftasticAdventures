@@ -13,5 +13,5 @@ define('APP_VER','1.0');
 define('MYSQL_DATABASE', 'rufftastic');
 define('MYSQL_HOST', '127.0.0.1');
 define('MYSQL_USER','rufftastic');
-define('MYSQL_PW','hackkstate#2019');
+define('MYSQL_PW','');
 define('MYSQL_PORT','3306');
